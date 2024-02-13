@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .folder-input {
+        padding-block: 1px;
+        padding-inline: 2px;
+    }
+    .add-btn{
+        padding-block: 1px;
+        padding-inline: 6px;
+        color: #fff;
+    }
+    .form-box{
+        margin: 20px 0px 20px 25px;
+        width: 292px;
+    }
+
+    .root-list::before, .child-list::before{
+        background-color: #000;
+        content: "";
+        height: 49px;
+        left: -23px;
+        position: absolute;
+        width: 2px;
+        top: -21px;
+    }
+
+    .root-list::after, .child-list::after{
+        border-bottom: 2px solid #000000;
+        top: 26px;
+        content: "";
+        left: -22px;
+        position: absolute;
+        width: 15px;
+    }
+
+    
+}
